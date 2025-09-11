@@ -193,56 +193,60 @@
   </div>
 </section>
 
-    
-    <!-- Simulation Test -->
+
+<!-- Simulation Test -->
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Simulation test</h2>
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Simulation result</h2>
+            
+            <!-- Dense environments -->
+            <h3 class="title is-4">Dense environments</h3>
+            
+            <div class="columns is-vcentered">
+              <div class="column has-text-centered">
+                  <div class="rows is-vcentered">
+                    <div class="row has-text-centered">
+                      <img src="./static/images/area_condition.png"
+                           alt="Rotatable area illustration"/>
+                      <p>Area condition</p>
+                    </div>
+                    
+                    <div class="row has-text-centered">
+                      <img src="./static/images/area_condition.png"
+                           alt="Rotatable area illustration"/>
+                      <p>Area condition</p>
+                    </div>
+                  </div>
+                </div>
+          
+              <div class="column has-text-centered">
+                  <div class="rows is-vcentered">
+                    <div class="row has-text-centered">
+                      <img src="./static/images/area_condition.png"
+                           alt="Rotatable area illustration"/>
+                      <p>Area condition</p>
+                    </div>
+                    
+                    <div class="row has-text-centered">
+                      <img src="./static/images/area_condition.png"
+                           alt="Rotatable area illustration"/>
+                      <p>Area condition</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Dense environments -->
 
-        <!-- Dense environment -->
-        <h3 class="title is-4">Dense environments</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
+            
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Dense environment -->
-
-        <!-- Narrow corridor -->
-        <h3 class="title is-4">Narrow corridor</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Narrow corridor -->
-        
       </div>
     </div>
-    <!--/ Simulation test -->
+  </div>
+</section>
+<!--/ Simulation test -->
 
 
     <!-- Real-world test -->
