@@ -247,12 +247,10 @@
                 </div>
             </div>
           
-            <img src="./static/images/sonye.t3.png"
-              style="width:70%; height:auto;"   
+            <img src="./static/images/sonye.t3.png"   
               alt="Rotatable area illustration"/>
             
           <img src="./static/images/path_dense_environments.png"
-              style="width:70%; height:auto;"   
               alt="Rotatable area illustration"/>
           
             <!-- Dense environments -->
@@ -265,70 +263,6 @@
 <!--/ Simulation test -->
 
 
-    <!-- Real-world test -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Real-world test</h2>
-
-        <!-- Narrow gap -->
-        <h3 class="title is-4">Narrow gap</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Narrow gap -->
-
-        <!-- Various scenarios -->
-        <h3 class="title is-4">Various scenarios</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Various scenarios -->
-
-
-      </div>
-    </div>
-    <!--/ Real-world test -->
 
     
 
