@@ -180,9 +180,13 @@
             <h3 class="title is-4">Local Motion between Rotatable Areas</h3>
             <div class="content has-text-justified">
               <p>
-                We can also animate the scene by interpolating the deformation latent codes of two input
-                frames. Use the slider here to linearly interpolate between the left frame and the right
-                frame.
+                Our approach regards local motion as a relationship between
+                two RoAs, $R_1 \rightarrow R_2$. Local motion consists of 1) performing
+                rotation at $R_1$ from the initial heading angle $\theta_1$ to the target
+                heading angle $theta_2$, and 2) then translation to the target position
+                of $R_2$.  If local motion is feasible, a robot can safely traverse between
+                two RoAs without collision. The feasiblility of local motion
+                is determined by area condition and edge condition.
               </p>
             
               <div class="columns is-vcentered">
