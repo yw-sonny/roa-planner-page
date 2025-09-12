@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html>
+  
+<head>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']]
+    }
+  };
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
@@ -147,10 +162,12 @@
                 </p>
             
                 <p>
-                  The parameters $\psi_s, \psi_e \in [0, 2\pi]$ denote the start and end 
-                  of the RoA, and all parameters are referenced to the world frame. 
+                  The parameters $\psi_s, \psi_e \in [0, 2\pi]$ denote the start and end of the RoA, 
+                  and all parameters are referenced to the world frame. 
                   If the robot’s heading angle is between $\psi_s$ and $\psi_e$ at $(x, y)$, 
-                  the robot can rotate without collision.
+                  the robot can rotate without collision. 
+                  If the robot’s heading angle is between ψs and ψe at (x,y), the robot remains collision-free. 
+                  Within the range corresponding to RoA, the robot can rotate freely.
                 </p>
               </div>
               <div class="has-text-centered">
