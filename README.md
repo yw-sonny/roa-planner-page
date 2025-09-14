@@ -1,4 +1,4 @@
-# Nerfies
+# RoA-Planner
 
 This is the repository that contains source code for the [RoA-Planner website](https://yw-sonny.github.io/roa-planner-page/).
 
